@@ -59,4 +59,4 @@ The project includes Jest tests to ensure functionality and handle various scena
 
 ## Hosted Application
 
-[https://robot-simulator-nikbk.netlify.app](#)
+[https://robot-simulator-nikbk.netlify.app]
