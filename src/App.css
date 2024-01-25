@@ -113,3 +113,9 @@ p {
   align-items: center;
   justify-content: center;
 }
+
+@media screen and (max-width: 500px){
+    .move-container {
+        flex-direction: column-reverse;
+    }
+}
