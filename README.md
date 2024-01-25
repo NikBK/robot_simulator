@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Toy Robot Simulator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+The Toy Robot Simulator is a React-based application that simulates the movement of a robot on a tabletop surface using user commands. The simulation enforces a 5x5 dimension table, accepting only valid moves and ignoring commands that would take the robot out of bounds.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Accepts user commands to move the robot in specified directions.
+- Enforces boundaries on the tabletop surface (5x5 dimension).
+- Generates a report after running report commands, displaying the current position and direction of the robot.
+- Provides a visual representation of the robot's movement.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React.js
+- JavaScript / ES6
+- CSS
 
-### `npm test`
+## Project Structure
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The project follows standard practices, including:
 
-### `npm run build`
+- **Constants File:** Contains constants used throughout the application.
+- **Utility Functions:** Includes utility functions to handle specific tasks.
+- **Custom Hooks:** Utilizes custom React hooks for better code organization and reusability.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository.
+2. Run `npm install` to install dependencies.
+3. Execute `npm start` to run the application locally.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
 
-### `npm run eject`
+1. Enter the PLACE command with coordinates to place the robot on the tabletop surface.
+2. Enter valid commands to move the robot on the tabletop surface in 3 directions (LEFT, RIGHT STRAIGHT).
+3. Enter REPORT command to see the current position and direction of the robot.
+4. Visual representation of the robot's movement is displayed for a better understanding.
+   ### Example commands:
+   - PLACE 0,0,NORTH
+   - REPORT
+   - MOVE
+   - REPORT
+   - RIGHT
+   - REPORT
+   - MOVE
+   - REPORT
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ### Output:
+   - 0,0,NORTH
+   - 0,1,NORTH
+   - 0,1,EAST
+   - 1,1,EAST
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Testing
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The project includes Jest tests to ensure functionality and handle various scenarios. Run `npm run test` to execute the test suite.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Hosted Application
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[Link to the Hosted Application - Placeholder](#)
