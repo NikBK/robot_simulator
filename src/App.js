@@ -6,7 +6,7 @@ import './App.css';
 
 function App() {
   const [moves, setMoves] = useState([]);
-  const [robotPosition, setRobotPosition] = useAnimateRobot(moves);
+  const [robotPosition] = useAnimateRobot(moves);
 
   return (
     <div className="App-header">
